@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SKUtils.initializeAppDefaultSetting()
        
+        
 
         self.window!.rootViewController = SKTabbarController()
         

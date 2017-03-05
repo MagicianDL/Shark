@@ -30,12 +30,11 @@ class SKHomeViewController: SKBaseViewController {
         return tableView
     } ()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-                
+        
         self.view.addSubview(tableView)
         
         layout()
@@ -50,7 +49,7 @@ class SKHomeViewController: SKBaseViewController {
 // MARK: Private Method
 extension SKHomeViewController {
     
-    func layout() {
+    fileprivate func layout() {
         tableView.snp.makeConstraints { (maker) in
             maker.edges.equalTo(self.view)
         }

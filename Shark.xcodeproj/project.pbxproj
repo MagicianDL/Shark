@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		116AC62AFDCAD1C367FAA747 /* Pods_Shark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49886F6DCD1495CDA21F6E33 /* Pods_Shark.framework */; };
+		F3698BD71E6BF2C0003DA62F /* UIButton+Shark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3698BD61E6BF2C0003DA62F /* UIButton+Shark.swift */; };
+		F3698BE21E6BF933003DA62F /* SKHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3698BE11E6BF933003DA62F /* SKHomeHeaderView.swift */; };
+		F3698BE51E6C060F003DA62F /* SKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3698BE41E6C060F003DA62F /* SKHomeViewController.swift */; };
 		F37021DA1E67A044002C848A /* UIColor+Shark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37021D91E67A044002C848A /* UIColor+Shark.swift */; };
 		F37021DD1E67EA61002C848A /* SKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37021DC1E67EA61002C848A /* SKBaseViewController.swift */; };
 		F37021DF1E67EAA5002C848A /* SKBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37021DE1E67EAA5002C848A /* SKBaseNavigationController.swift */; };
 		F37021E11E67EAB8002C848A /* SKBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37021E01E67EAB8002C848A /* SKBaseTableViewController.swift */; };
-		F3745C8A1E684F57003F4E2A /* SKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3745C891E684F57003F4E2A /* SKHomeViewController.swift */; };
 		F3745C8C1E684F6E003F4E2A /* SKConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3745C8B1E684F6E003F4E2A /* SKConversationViewController.swift */; };
 		F3745C8E1E684F7F003F4E2A /* SKReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3745C8D1E684F7F003F4E2A /* SKReportViewController.swift */; };
 		F3745C901E684F8C003F4E2A /* SKMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3745C8F1E684F8C003F4E2A /* SKMineViewController.swift */; };
@@ -29,11 +31,14 @@
 		49886F6DCD1495CDA21F6E33 /* Pods_Shark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A32BE8372B68AA8652E592 /* Pods-Shark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shark/Pods-Shark.debug.xcconfig"; sourceTree = "<group>"; };
 		87E91BB28EDF4EDC6E69B9AB /* Pods-Shark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shark.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shark/Pods-Shark.release.xcconfig"; sourceTree = "<group>"; };
+		F3698BD61E6BF2C0003DA62F /* UIButton+Shark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Shark.swift"; sourceTree = "<group>"; };
+		F3698BD91E6BF6DA003DA62F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/Shark-atfwowkopeoqcxbcrfqdwyeouusa/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		F3698BE11E6BF933003DA62F /* SKHomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHomeHeaderView.swift; sourceTree = "<group>"; };
+		F3698BE41E6C060F003DA62F /* SKHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHomeViewController.swift; sourceTree = "<group>"; };
 		F37021D91E67A044002C848A /* UIColor+Shark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Shark.swift"; sourceTree = "<group>"; };
 		F37021DC1E67EA61002C848A /* SKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKBaseViewController.swift; sourceTree = "<group>"; };
 		F37021DE1E67EAA5002C848A /* SKBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKBaseNavigationController.swift; sourceTree = "<group>"; };
 		F37021E01E67EAB8002C848A /* SKBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKBaseTableViewController.swift; sourceTree = "<group>"; };
-		F3745C891E684F57003F4E2A /* SKHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHomeViewController.swift; sourceTree = "<group>"; };
 		F3745C8B1E684F6E003F4E2A /* SKConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKConversationViewController.swift; sourceTree = "<group>"; };
 		F3745C8D1E684F7F003F4E2A /* SKReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKReportViewController.swift; sourceTree = "<group>"; };
 		F3745C8F1E684F8C003F4E2A /* SKMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMineViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		556CE279CFFF277EF786793A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3698BD91E6BF6DA003DA62F /* SnapKit.framework */,
 				49886F6DCD1495CDA21F6E33 /* Pods_Shark.framework */,
 			);
 			name = Frameworks;
@@ -75,6 +81,22 @@
 				87E91BB28EDF4EDC6E69B9AB /* Pods-Shark.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3698BE01E6BF909003DA62F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3698BE11E6BF933003DA62F /* SKHomeHeaderView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F3698BE31E6C060F003DA62F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3698BE41E6C060F003DA62F /* SKHomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		F37021DB1E67EA44002C848A /* BaseViewController */ = {
@@ -93,14 +115,6 @@
 				F3745C8B1E684F6E003F4E2A /* SKConversationViewController.swift */,
 			);
 			path = Conversation;
-			sourceTree = "<group>";
-		};
-		F37021E31E67ED59002C848A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				F3745C891E684F57003F4E2A /* SKHomeViewController.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		F37021E41E67ED59002C848A /* Mine */ = {
@@ -195,6 +209,7 @@
 		F3FB130A1E66CCF9003D1C31 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F3698BD61E6BF2C0003DA62F /* UIButton+Shark.swift */,
 				F37021D91E67A044002C848A /* UIColor+Shark.swift */,
 				F38712781E69483800EEDC81 /* UITableViewCell+Shark.swift */,
 			);
@@ -206,8 +221,8 @@
 			children = (
 				F3745C911E6850D1003F4E2A /* Tabbar */,
 				F37021E21E67ED59002C848A /* Conversation */,
-				F37021E31E67ED59002C848A /* Home */,
 				F37021E41E67ED59002C848A /* Mine */,
+				F3698BE31E6C060F003DA62F /* Home */,
 				F37021E51E67ED59002C848A /* Report */,
 				F37021DB1E67EA44002C848A /* BaseViewController */,
 			);
@@ -217,6 +232,7 @@
 		F3FB130C1E66CCF9003D1C31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3698BE01E6BF909003DA62F /* Home */,
 				F387127B1E694D8500EEDC81 /* Article */,
 			);
 			path = Views;
@@ -347,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F38712541E69198800EEDC81 /* SKUtils.swift in Sources */,
+				F3698BE21E6BF933003DA62F /* SKHomeHeaderView.swift in Sources */,
 				F3745C8E1E684F7F003F4E2A /* SKReportViewController.swift in Sources */,
 				F3745C931E6850E3003F4E2A /* SKTabbarController.swift in Sources */,
 				F37021DF1E67EAA5002C848A /* SKBaseNavigationController.swift in Sources */,
@@ -355,10 +372,11 @@
 				F38712791E69483800EEDC81 /* UITableViewCell+Shark.swift in Sources */,
 				F3745C8C1E684F6E003F4E2A /* SKConversationViewController.swift in Sources */,
 				F37021DA1E67A044002C848A /* UIColor+Shark.swift in Sources */,
+				F3698BD71E6BF2C0003DA62F /* UIButton+Shark.swift in Sources */,
+				F3698BE51E6C060F003DA62F /* SKHomeViewController.swift in Sources */,
 				F3FB12FE1E66C605003D1C31 /* AppDelegate.swift in Sources */,
 				F387127D1E694E1F00EEDC81 /* SKArticleTableViewCell.swift in Sources */,
 				F37021DD1E67EA61002C848A /* SKBaseViewController.swift in Sources */,
-				F3745C8A1E684F57003F4E2A /* SKHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,11 +494,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 7EBT3L7M8A;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Shark/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syh.Shark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
@@ -494,11 +514,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 7EBT3L7M8A;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Shark/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syh.Shark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";

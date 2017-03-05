@@ -12,39 +12,39 @@ import SnapKit
 class SKArticleTableViewCell: UITableViewCell {
 
     // MARK: Properties
-    lazy var baseView: UIView = {
+    var baseView: UIView {
         let view = UIView()
         view.backgroundColor = UIColor.white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    } ()
+    }
     
     /// 文章logo
-    lazy var articleLogoImageView: UIImageView = {
+    var articleLogoImageView: UIImageView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
-    } ()
+    }
     
     /// 文章标题
-    lazy var titleLabel: UILabel = {
+    var titleLabel: UILabel {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = UIColor(hexString: "#666666")
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-    } ()
+    }
     
     /// 文章日期
-    lazy var dateLabel: UILabel = {
+    var dateLabel: UILabel {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = UIColor(hexString: "#666666")
         label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-    } ()
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -73,7 +73,7 @@ class SKArticleTableViewCell: UITableViewCell {
 extension SKArticleTableViewCell {
     
     /// 配置 Cell
-    func confiureCell() {
+     func confiureCell() {
         articleLogoImageView.image = UIImage(named: "tabbar_home_sel")
         titleLabel.text = "床前明月光，疑是地上霜。举头望明月，低头思故乡"
         dateLabel.text = "2017-03-04"
