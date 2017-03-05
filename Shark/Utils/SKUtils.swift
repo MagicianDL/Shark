@@ -12,5 +12,38 @@ import UIKit
 
 class SKUtils: NSObject {
 
+    class func initializeAppDefaultSetting() {
+        initializeNavigationBar()
+        initializeTabbar()
+    }
+    
+    /// tabbar 设置
+    class func initializeTabbar() {
+        
+        let normalAttributes: Dictionary = [
+            NSForegroundColorAttributeName: UIColor(hexString: "#A9A8A8")
+        ]
+        
+        let selectedAttribute: Dictionary = [
+            NSForegroundColorAttributeName: UIColor.mainBlue
+        ]
+        
+        UITabBarItem.appearance().setTitleTextAttributes(normalAttributes, for: UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes(selectedAttribute, for: UIControlState.selected)
+        UITabBar.appearance().tintColor = UIColor.mainBlue
+        
+    }
+    
+    /// 导航栏设置
+    class func initializeNavigationBar() {
+        
+        let attributes = [
+            NSForegroundColorAttributeName: UIColor.mainBlue,
+            NSFontAttributeName: UIFont.systemFont(ofSize: 20)
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        UINavigationBar.appearance().tintColor = UIColor.mainBlue
+    }
     
 }

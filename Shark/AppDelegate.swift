@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         // Override point for customization after application launch.
         
-        
+        SKUtils.initializeAppDefaultSetting()
+       
+
         self.window!.rootViewController = SKTabbarController()
         
 
