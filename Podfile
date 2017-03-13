@@ -9,6 +9,6 @@ target 'Shark' do
 
   pod 'SnapKit' # Autolayout
   pod 'Alamofire' # Network
-
+  pod 'Kingfisher' # WebImage
 
 end

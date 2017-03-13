@@ -73,6 +73,7 @@ class SKHomeViewController: SKBaseViewController {
             self.tableHeaderView.reload()
         }
         
+        UIRefreshControl
         
         layout()
     }

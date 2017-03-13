@@ -1,12 +1,18 @@
 PODS:
-  - SnapKit (3.1.2)
+  - Alamofire (4.4.0)
+  - Kingfisher (3.5.2)
+  - SnapKit (3.2.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
   - SnapKit
 
 SPEC CHECKSUMS:
-  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 1201f978874272bd950c9b81b516d326d3aabe75
+PODFILE CHECKSUM: fb9bf8ecd9ec3e13be902409524b7b3118760e7d
 
 COCOAPODS: 1.2.0.beta.1

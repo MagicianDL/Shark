@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Shark.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>932FDE53A13F6B3782BD22D54BFBACC6</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0241620E47459696BC2CED10E958FE0</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2F8F4E522D64EF42482B73773448FC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E93A8CBECFCB42ACFBFEAFC8E2196649</key>
 		<dict>
 			<key>primary</key>
 			<true/>
