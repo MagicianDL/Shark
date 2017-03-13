@@ -12,52 +12,62 @@ import UIKit
 // MARK: - Title Position
 extension UIButton {
     
-    enum UIButtonTitlePosition {
-        case top
-        case bottom
+    enum UIButtonImagePosition {
         case left
         case right
+        case top
+        case bottom
     }
+
     
-    func set(image anImage: UIImage?, title: String?, titlePosition: UIButtonTitlePosition, spacing: CGFloat, forState state: UIControlState) {
+    func set(image anImage: UIImage?, title: String?, imagePosition: UIButtonImagePosition, spacing: CGFloat, forState state: UIControlState) {
         self.imageView?.contentMode = .center
         self.setImage(anImage, for: state)
+        self.setTitle(title, for: state)
         
-        lablePositionRespectToImage(title: title, position: titlePosition, spacing: spacing)
+        adjustImage(position: imagePosition, spacing: spacing)
+        
     }
     
-    
-    private func lablePositionRespectToImage(title: String?, position: UIButtonTitlePosition, spacing: CGFloat) {
-        if let title_ = title {
-            let imageSize = self.imageRect(forContentRect: self.frame)
-            let titleFont = self.titleLabel?.font!
-            let titleSize = title_.size(attributes: [NSFontAttributeName: titleFont!])
-            
-            var titleInsets: UIEdgeInsets
-            var imageInsets: UIEdgeInsets
-            
-            switch position {
-            case .top:
-                titleInsets = UIEdgeInsets(top: -(imageSize.height + titleSize.height + spacing), left: -(imageSize.width), bottom: 0, right: 0)
-                imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -titleSize.width)
-            case .bottom:
-                titleInsets = UIEdgeInsets(top: (imageSize.height + titleSize.height + spacing), left: -(imageSize.width), bottom: 0, right: 0)
-                imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -titleSize.width)
-            case .left:
-                titleInsets = UIEdgeInsets(top: 0, left: -(imageSize.width * 2), bottom: 0, right: 0)
-                imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -(titleSize.width * 2 + spacing))
-            case .right:
-                titleInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -spacing)
-                imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-                //        default:
-                //            titleInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-                //            imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-            }
-            
-            self.titleEdgeInsets = titleInsets
-            self.imageEdgeInsets = imageInsets
-
+    /// 调整图片位置，返回调整后所需要的size
+    /// 调用本方法前，请先确保imageView和titleLabel有值。
+    @discardableResult
+    func adjustImage(position: UIButtonImagePosition, spacing: CGFloat) -> CGSize {
+        guard imageView != nil && titleLabel != nil else {
+            return CGSize.zero
         }
+        let imageSize = self.imageView!.intrinsicContentSize
+        let titleSize = self.titleLabel!.intrinsicContentSize
         
+        // 布局
+        switch (position) {
+        case .left:
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: -spacing / 2, bottom: 0, right: spacing / 2)
+            titleEdgeInsets = UIEdgeInsets(top: 0, left: spacing / 2, bottom: 0, right: -spacing / 2)
+            contentEdgeInsets = UIEdgeInsets(top: 0, left: spacing / 2, bottom: 0, right: spacing / 2)
+        case .right:
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: (titleSize.width + spacing / 2), bottom: 0, right: -(titleSize.width + spacing / 2))
+            titleEdgeInsets = UIEdgeInsets(top: 0, left: -(imageSize.width + spacing / 2), bottom: 0, right: (imageSize.width + spacing / 2))
+            contentEdgeInsets = UIEdgeInsetsMake(0, spacing / 2, 0, spacing / 2);
+        case .top, .bottom:
+            let imageOffsetX = (imageSize.width + titleSize.width) / 2 - imageSize.width / 2
+            let imageOffsetY = imageSize.height / 2 + spacing / 2
+            let titleOffsetX = (imageSize.width + titleSize.width / 2) - (imageSize.width + titleSize.width) / 2
+            let titleOffsetY = titleSize.height / 2 + spacing / 2
+            let changedWidth = titleSize.width + imageSize.width - max(titleSize.width, imageSize.width)
+            let changedHeight = titleSize.height + imageSize.height + spacing - max(imageSize.height, imageSize.height)
+            
+            if position == .top {
+                imageEdgeInsets = UIEdgeInsets(top: -imageOffsetY, left: imageOffsetX, bottom: imageOffsetY, right: -imageOffsetX)
+                titleEdgeInsets = UIEdgeInsets(top: titleOffsetY, left: -titleOffsetX, bottom: -titleOffsetY, right: titleOffsetX)
+                self.contentEdgeInsets = UIEdgeInsetsMake(imageOffsetY, -changedWidth / 2, changedHeight - imageOffsetY, -changedWidth / 2);
+            } else {
+                imageEdgeInsets = UIEdgeInsets(top: imageOffsetY, left: imageOffsetX, bottom: -imageOffsetY, right: -imageOffsetX)
+                titleEdgeInsets = UIEdgeInsets(top: -titleOffsetY, left: -titleOffsetX, bottom: titleOffsetY, right: titleOffsetX)
+                self.contentEdgeInsets = UIEdgeInsetsMake(changedHeight - imageOffsetY, -changedWidth / 2, imageOffsetY, -changedWidth / 2);
+            }
+        }
+        return self.intrinsicContentSize
     }
+    
 }

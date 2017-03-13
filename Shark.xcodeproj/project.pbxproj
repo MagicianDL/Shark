@@ -22,6 +22,18 @@
 		F38712541E69198800EEDC81 /* SKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38712531E69198800EEDC81 /* SKUtils.swift */; };
 		F38712791E69483800EEDC81 /* UITableViewCell+Shark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38712781E69483800EEDC81 /* UITableViewCell+Shark.swift */; };
 		F387127D1E694E1F00EEDC81 /* SKArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387127C1E694E1F00EEDC81 /* SKArticleTableViewCell.swift */; };
+		F3A1B50B1E6F958A00BAEE76 /* SKCarouselCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1B5081E6F958A00BAEE76 /* SKCarouselCellInfo.swift */; };
+		F3A1B50C1E6F958A00BAEE76 /* SKCarouselSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1B5091E6F958A00BAEE76 /* SKCarouselSubview.swift */; };
+		F3A1B50D1E6F958A00BAEE76 /* SKCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1B50A1E6F958A00BAEE76 /* SKCarouselView.swift */; };
+		F3A1B5101E6FA56C00BAEE76 /* SKConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1B50F1E6FA56C00BAEE76 /* SKConst.swift */; };
+		F3A1B5171E6FD73E00BAEE76 /* imageInfos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3A1B5111E6FD73E00BAEE76 /* imageInfos.plist */; };
+		F3A1B5181E6FD73E00BAEE76 /* angryBirds_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3A1B5121E6FD73E00BAEE76 /* angryBirds_00.jpg */; };
+		F3A1B5191E6FD73E00BAEE76 /* angryBirds_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3A1B5131E6FD73E00BAEE76 /* angryBirds_01.jpg */; };
+		F3A1B51A1E6FD73E00BAEE76 /* angryBirds_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3A1B5141E6FD73E00BAEE76 /* angryBirds_02.jpg */; };
+		F3A1B51B1E6FD73E00BAEE76 /* angryBirds_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3A1B5151E6FD73E00BAEE76 /* angryBirds_03.jpg */; };
+		F3A1B51C1E6FD73E00BAEE76 /* angryBirds_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3A1B5161E6FD73E00BAEE76 /* angryBirds_04.jpg */; };
+		F3B5FB261E72378500D29E26 /* SKHomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5FB251E72378500D29E26 /* SKHomeMenuView.swift */; };
+		F3B5FB2A1E7296CD00D29E26 /* SKHomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5FB291E7296CD00D29E26 /* SKHomeTitleView.swift */; };
 		F3FB12FE1E66C605003D1C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB12FD1E66C605003D1C31 /* AppDelegate.swift */; };
 		F3FB13001E66C605003D1C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FB12FF1E66C605003D1C31 /* Assets.xcassets */; };
 		F3FB13031E66C605003D1C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FB13011E66C605003D1C31 /* LaunchScreen.storyboard */; };
@@ -46,6 +58,18 @@
 		F38712531E69198800EEDC81 /* SKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKUtils.swift; sourceTree = "<group>"; };
 		F38712781E69483800EEDC81 /* UITableViewCell+Shark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Shark.swift"; sourceTree = "<group>"; };
 		F387127C1E694E1F00EEDC81 /* SKArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F3A1B5081E6F958A00BAEE76 /* SKCarouselCellInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCarouselCellInfo.swift; sourceTree = "<group>"; };
+		F3A1B5091E6F958A00BAEE76 /* SKCarouselSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCarouselSubview.swift; sourceTree = "<group>"; };
+		F3A1B50A1E6F958A00BAEE76 /* SKCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCarouselView.swift; sourceTree = "<group>"; };
+		F3A1B50F1E6FA56C00BAEE76 /* SKConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKConst.swift; sourceTree = "<group>"; };
+		F3A1B5111E6FD73E00BAEE76 /* imageInfos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageInfos.plist; sourceTree = "<group>"; };
+		F3A1B5121E6FD73E00BAEE76 /* angryBirds_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_00.jpg; sourceTree = "<group>"; };
+		F3A1B5131E6FD73E00BAEE76 /* angryBirds_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_01.jpg; sourceTree = "<group>"; };
+		F3A1B5141E6FD73E00BAEE76 /* angryBirds_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_02.jpg; sourceTree = "<group>"; };
+		F3A1B5151E6FD73E00BAEE76 /* angryBirds_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_03.jpg; sourceTree = "<group>"; };
+		F3A1B5161E6FD73E00BAEE76 /* angryBirds_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_04.jpg; sourceTree = "<group>"; };
+		F3B5FB251E72378500D29E26 /* SKHomeMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHomeMenuView.swift; sourceTree = "<group>"; };
+		F3B5FB291E7296CD00D29E26 /* SKHomeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHomeTitleView.swift; sourceTree = "<group>"; };
 		F3FB12FA1E66C605003D1C31 /* Shark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FB12FD1E66C605003D1C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FB12FF1E66C605003D1C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				F3698BE11E6BF933003DA62F /* SKHomeHeaderView.swift */,
+				F3B5FB251E72378500D29E26 /* SKHomeMenuView.swift */,
+				F3B5FB291E7296CD00D29E26 /* SKHomeTitleView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -167,8 +193,32 @@
 		F38712801E6953F800EEDC81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3A1B5111E6FD73E00BAEE76 /* imageInfos.plist */,
+				F3A1B5121E6FD73E00BAEE76 /* angryBirds_00.jpg */,
+				F3A1B5131E6FD73E00BAEE76 /* angryBirds_01.jpg */,
+				F3A1B5141E6FD73E00BAEE76 /* angryBirds_02.jpg */,
+				F3A1B5151E6FD73E00BAEE76 /* angryBirds_03.jpg */,
+				F3A1B5161E6FD73E00BAEE76 /* angryBirds_04.jpg */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3A1B5071E6F958A00BAEE76 /* CarouseScrollview */ = {
+			isa = PBXGroup;
+			children = (
+				F3A1B5081E6F958A00BAEE76 /* SKCarouselCellInfo.swift */,
+				F3A1B5091E6F958A00BAEE76 /* SKCarouselSubview.swift */,
+				F3A1B50A1E6F958A00BAEE76 /* SKCarouselView.swift */,
+			);
+			path = CarouseScrollview;
+			sourceTree = "<group>";
+		};
+		F3A1B50E1E6FA55E00BAEE76 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				F3A1B50F1E6FA56C00BAEE76 /* SKConst.swift */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 		F3FB12F11E66C605003D1C31 = {
@@ -193,11 +243,12 @@
 			isa = PBXGroup;
 			children = (
 				F3FB12FD1E66C605003D1C31 /* AppDelegate.swift */,
+				F3A1B50E1E6FA55E00BAEE76 /* Const */,
 				F387127A1E694D7000EEDC81 /* Model */,
 				F37021E61E67FCC3002C848A /* Utils */,
 				F3FB130A1E66CCF9003D1C31 /* Extensions */,
-				F3FB130B1E66CCF9003D1C31 /* ViewControllers */,
 				F3FB130C1E66CCF9003D1C31 /* Views */,
+				F3FB130B1E66CCF9003D1C31 /* ViewControllers */,
 				F38712801E6953F800EEDC81 /* Supporting Files */,
 				F3FB12FF1E66C605003D1C31 /* Assets.xcassets */,
 				F3FB13011E66C605003D1C31 /* LaunchScreen.storyboard */,
@@ -232,6 +283,7 @@
 		F3FB130C1E66CCF9003D1C31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3A1B5071E6F958A00BAEE76 /* CarouseScrollview */,
 				F3698BE01E6BF909003DA62F /* Home */,
 				F387127B1E694D8500EEDC81 /* Article */,
 			);
@@ -302,8 +354,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A1B51C1E6FD73E00BAEE76 /* angryBirds_04.jpg in Resources */,
+				F3A1B51B1E6FD73E00BAEE76 /* angryBirds_03.jpg in Resources */,
+				F3A1B5181E6FD73E00BAEE76 /* angryBirds_00.jpg in Resources */,
+				F3A1B5171E6FD73E00BAEE76 /* imageInfos.plist in Resources */,
+				F3A1B51A1E6FD73E00BAEE76 /* angryBirds_02.jpg in Resources */,
 				F3FB13001E66C605003D1C31 /* Assets.xcassets in Resources */,
 				F3FB13031E66C605003D1C31 /* LaunchScreen.storyboard in Resources */,
+				F3A1B5191E6FD73E00BAEE76 /* angryBirds_01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,17 +420,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B5FB2A1E7296CD00D29E26 /* SKHomeTitleView.swift in Sources */,
 				F38712541E69198800EEDC81 /* SKUtils.swift in Sources */,
 				F3698BE21E6BF933003DA62F /* SKHomeHeaderView.swift in Sources */,
 				F3745C8E1E684F7F003F4E2A /* SKReportViewController.swift in Sources */,
 				F3745C931E6850E3003F4E2A /* SKTabbarController.swift in Sources */,
+				F3A1B50C1E6F958A00BAEE76 /* SKCarouselSubview.swift in Sources */,
 				F37021DF1E67EAA5002C848A /* SKBaseNavigationController.swift in Sources */,
 				F37021E11E67EAB8002C848A /* SKBaseTableViewController.swift in Sources */,
 				F3745C901E684F8C003F4E2A /* SKMineViewController.swift in Sources */,
 				F38712791E69483800EEDC81 /* UITableViewCell+Shark.swift in Sources */,
 				F3745C8C1E684F6E003F4E2A /* SKConversationViewController.swift in Sources */,
+				F3B5FB261E72378500D29E26 /* SKHomeMenuView.swift in Sources */,
 				F37021DA1E67A044002C848A /* UIColor+Shark.swift in Sources */,
 				F3698BD71E6BF2C0003DA62F /* UIButton+Shark.swift in Sources */,
+				F3A1B5101E6FA56C00BAEE76 /* SKConst.swift in Sources */,
+				F3A1B50D1E6F958A00BAEE76 /* SKCarouselView.swift in Sources */,
+				F3A1B50B1E6F958A00BAEE76 /* SKCarouselCellInfo.swift in Sources */,
 				F3698BE51E6C060F003DA62F /* SKHomeViewController.swift in Sources */,
 				F3FB12FE1E66C605003D1C31 /* AppDelegate.swift in Sources */,
 				F387127D1E694E1F00EEDC81 /* SKArticleTableViewCell.swift in Sources */,

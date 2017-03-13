@@ -7,44 +7,44 @@
 //
 
 import UIKit
-import SnapKit
+
 
 class SKArticleTableViewCell: UITableViewCell {
 
     // MARK: Properties
-    var baseView: UIView {
+    fileprivate var baseView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }
+    } ()
     
     /// 文章logo
-    var articleLogoImageView: UIImageView {
+    fileprivate var articleLogoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
-    }
+    } ()
     
     /// 文章标题
-    var titleLabel: UILabel {
+    fileprivate var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = UIColor(hexString: "#666666")
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-    }
+    }()
     
     /// 文章日期
-    var dateLabel: UILabel {
+    fileprivate var dateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = UIColor(hexString: "#666666")
         label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-    }
+    } ()
     
     override func awakeFromNib() {
         super.awakeFromNib()
